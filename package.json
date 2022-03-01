@@ -18,21 +18,35 @@
     "bugs": {
         "url": "https://github.com/cxz1535089707/cxz/issues"
     },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "**/*.{js,ts,tsx,json,jsx,less}": "eslint --fix"
+    },
     "homepage": "https://github.com/cxz1535089707/cxz#readme",
     "dependencies": {
         "@types/react": "^17.0.38",
         "@types/react-dom": "^17.0.11",
+        "husky": "^4.3.8",
+        "lint-staged": "^12.3.4",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "ts-loader": "^9.2.6"
     },
     "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.13.0",
+        "@typescript-eslint/parser": "^5.13.0",
         "awesome-typescript-loader": "^5.2.1",
         "babel-core": "^6.26.3",
         "babel-loader": "^7.1.5",
         "babel-preset-env": "^1.7.0",
         "babel-preset-react": "^6.24.1",
         "css-loader": "^6.5.1",
+        "eslint": "^8.10.0",
+        "eslint-plugin-react": "^7.29.2",
         "html-webpack-plugin": "^5.5.0",
         "postcss": "^8.4.5",
         "postcss-loader": "^6.2.1",
